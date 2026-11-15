@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria LivraLendo - Contato</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <h1 class="brand-title">Livra<span>Lendo</span></h1>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="catalogo.html" class="nav-link">Catálogo</a>
+          <a href="carrinho.html" class="nav-link"
+            >Carrinho (<span id="contadorCarrinho">0</span>)</a
+          >
+          <a href="contato.html" class="nav-link ativo">Sobre / Contato</a>
+        </nav>
+        <button id="themeBtn" class="theme-btn">🌙 Escuro</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Sobre a Livraria</h2>
+        <p>
+          A Livraria LivraLendo fomenta a paixão pela leitura oferecendo uma
+          curadoria refinada de livros em diversos gêneros literários. Nosso
+          objetivo é conectar leitores a histórias inesquecíveis e conhecimento
+          técnico de ponta.
+        </p>
+
+        <hr />
+
+        <h3>Fale Conosco</h3>
+
+        <form id="formContato">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" required />
+
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" required />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" rows="4" required></textarea>
+
+          <button type="submit">Enviar Mensagem</button>
+          <span id="feedbackContato" class="feedback"></span>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Livraria LivraLendo</p>
+        <p><strong>Endereço:</strong> Avenida Paulista, 100 - São Paulo/SP</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

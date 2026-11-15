@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria LivraLendo - Home</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <h1 class="brand-title">Livra<span>Lendo</span></h1>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link ativo">Home</a>
+          <a href="catalogo.html" class="nav-link">Catálogo</a>
+          <a href="carrinho.html" class="nav-link"
+            >Carrinho (<span id="contadorCarrinho">0</span>)</a
+          >
+          <a href="contato.html" class="nav-link">Sobre / Contato</a>
+        </nav>
+
+        <button id="themeBtn" class="theme-btn">🌙 Escuro</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <article>
+          <h2>O Livro do Mês: "JavaScript Definitivo"</h2>
+          <p>
+            Domine a linguagem da web com a obra técnica mais aclamada da
+            década.
+          </p>
+          <a href="catalogo.html" class="btn-hero">Conferir Ofertas</a>
+        </article>
+      </section>
+
+      <section class="card">
+        <h3>Livros em Destaque</h3>
+        <div id="vitrineDestaques" class="grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Livraria LivraLendo</p>
+        <p><strong>Endereço:</strong> Avenida Paulista, 100 - São Paulo/SP</p>
+      </div>
+    </footer>
+
+    <div id="modalDetalhes" class="modal hidden">
+      <div class="modal-content">
+        <button class="close-btn" onclick="fecharModal()">&times;</button>
+        <div id="conteudoModal"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

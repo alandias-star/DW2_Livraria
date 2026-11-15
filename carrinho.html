@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livraria LivraLendo - Carrinho</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-container">
+        <h1 class="brand-title">Livra<span>Lendo</span></h1>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="catalogo.html" class="nav-link">Catálogo</a>
+          <a href="carrinho.html" class="nav-link ativo"
+            >Carrinho (<span id="contadorCarrinho">0</span>)</a
+          >
+          <a href="contato.html" class="nav-link">Sobre / Contato</a>
+        </nav>
+        <button id="themeBtn" class="theme-btn">🌙 Escuro</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Seu Carrinho de Compras</h2>
+        <div id="itensCarrinho"></div>
+
+        <div class="carrinho-opcoes">
+          <p>
+            <strong>Valor Total da Compra:</strong> R$
+            <span id="total">0.00</span>
+          </p>
+          <button id="btnLimparCarrinho" class="danger">Limpar Carrinho</button>
+          <a href="catalogo.html" class="btn-secundario">Continuar Comprando</a>
+        </div>
+
+        <hr />
+
+        <h3>Finalizar Compra</h3>
+        <form id="formCheckout">
+          <label for="nomeComprador">Nome Completo:</label>
+          <input type="text" id="nomeComprador" required />
+
+          <label for="enderecoComprador">Endereço de Entrega:</label>
+          <input type="text" id="enderecoComprador" required />
+
+          <button type="submit">Confirmar e Finalizar Pedido</button>
+          <span id="feedbackCheckout" class="feedback"></span>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Livraria LivraLendo</p>
+        <p><strong>Endereço:</strong> Avenida Paulista, 100 - São Paulo/SP</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
